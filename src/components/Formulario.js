@@ -43,8 +43,16 @@ const Formulario = ({crearCita}) => {
         cita.id =  uuid();
 
         // Crear cita
+        crearCita(cita);
 
         // Reiniciar el formulario
+        actualizarCita({
+            mascota: '',
+            propietario: '',
+            fecha: '',
+            hora: '',
+            sintomas: ''
+        })
     }
     
     return (
